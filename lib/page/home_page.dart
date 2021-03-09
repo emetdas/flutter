@@ -5,13 +5,17 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("new app"),),
+      appBar: AppBar(title: Text("new app"),
+      centerTitle: true,
+      elevation: 0,
+      ),
       body: Center(
         child: Text(
-        "center",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),
+        "center",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
         textScaleFactor: 2.0,
       ),
       ),
+      drawer: Drawer(),
     );
   }
 }
