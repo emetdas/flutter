@@ -10,13 +10,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Homepage(),
       theme: ThemeData(appBarTheme: AppBarTheme(color: Colors.deepPurple[400])),
-      // themeMode: ThemeMode.dark,
-      // themeMode: ThemeMode.light,
-      // darkTheme: ThemeData(brightness: Brightness.dark),
-      // routes: {
-      //   "/":(context)=> Signup(),
-      //   "/signup":(context)=> Signup(),
-      // },
     );
   }
 }
