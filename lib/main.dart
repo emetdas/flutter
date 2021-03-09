@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'page/home_page.dart';
 void main() => runApp(MyApp());
  
 class MyApp extends StatelessWidget {
@@ -7,18 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('New App'),
-          elevation: 0,
-          backgroundColor: Color(0xFF7E236F),
-        ),
-        body: Center(
-          child: Container(
-            child: Text('Pro app developer'),
-          ),
-        ),
-      ),
+      home: Homepage(),
     );
   }
 }
