@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         // appBarTheme: AppBarTheme(color: Colors.deepPurple[400]),
         primarySwatch: Colors.deepPurple,
       ),
-    initialRoute: "/Login",
+    initialRoute: MyRouts.homeRoute,
     routes: {
       "/Login":(context)=> Login(),
       MyRouts.loginRoute:(context)=> Login(),
