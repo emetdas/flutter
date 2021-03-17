@@ -11,7 +11,7 @@ class Homepage extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-        "center",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+        "WellCome Home Page",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
         textScaleFactor: 2.0,
       ),
       ),
