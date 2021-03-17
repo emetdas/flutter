@@ -59,49 +59,17 @@ class _LoginState extends State<Login> {
                   SizedBox(
                     height: 30,
                   ),
-                  InkWell(
-                    onTap: () async{
-                      setState(() {
-                        changeBtn = true;
-                      });
-                      await Future.delayed(Duration(seconds: 1));
+                  ElevatedButton(
+                    child: Text("Login"),
+                    style: TextButton.styleFrom(
+                      // padding:
+                      //     EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                      minimumSize: Size(130, 40),
+                    ),
+                    onPressed: () {
                       Navigator.pushNamed(context, MyRouts.homeRoute);
                     },
-                    child: AnimatedContainer(
-                      duration: Duration(seconds: 1),
-                      width: changeBtn ? 50 : 150,
-                      height: 40,
-                      alignment: Alignment.center,
-                      color: Colors.deepPurple,
-                      child: changeBtn
-                          ? Icon(
-                              Icons.done,
-                              color: Colors.white,
-                            )
-                          : Text(
-                              "Login",
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 30),
-                            ),
-                      decoration: BoxDecoration(
-                        // shape: changeBtn ? BoxShape.circle : BoxShape.rectangle,
-                        borderRadius: BorderRadius.circular(changeBtn ? 50 : 8),
-                      ),
-                    ),
                   ),
-                  // ElevatedButton(
-                  //   child: Text("Login"),
-                  //   style: TextButton.styleFrom(
-                  //     // padding:
-                  //     //     EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-                  //     minimumSize: Size(120, 40),
-                  //   ),
-                  //   onPressed: () {
-                  //     Navigator.pushNamed(context, MyRouts.homeRoute);
-                  //   },
-                  // ),
                 ],
               ),
             ),
